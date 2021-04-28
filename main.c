@@ -1,18 +1,36 @@
 #include "Includes.h"
 
-int main(int argc, char const *argv[])
+int div(int a, int b)
 {
-	const Length window = {800, 600};
-	init(window);
+	return a/b;
+}
 
-	while(1){
-		Ticks frameStart = getTicks();
-		clear();
+int mul(int a, int b)
+{
+	return a*b;
+}
 
-		drawTextCentered(400, 300, "My cock is massive!!!1!!");
 
-		draw();
-		events(frameStart + TPF);
-	}
+int sub(int a, int b)
+{
+	return a-b;
+}
+
+
+int add(int a, int b)
+{
+	return a+b;
+}
+
+int main()
+{
+	int num1 = 5;
+	int num2 = 10;
+	int sum = add(num1, num2);
+	int dif = sub(num2, num1);
+	int qnt = div(num1, num2);
+	int pro = mul(num1, num2);
+	printf("sum = %i\n", sum);
+	printf("dif = %i\n", dif);
 	return 0;
 }

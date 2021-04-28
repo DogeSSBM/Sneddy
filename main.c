@@ -32,5 +32,8 @@ int main()
 	int pro = mul(num1, num2);
 	printf("sum = %i\n", sum);
 	printf("dif = %i\n", dif);
+	printf("qnt = %i\n", div);
+	printf("pro = %i\n", mul);
+
 	return 0;
 }

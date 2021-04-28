@@ -10,30 +10,40 @@ int mul(int a, int b)
 	return a*b;
 }
 
-
 int sub(int a, int b)
 {
 	return a-b;
 }
-
 
 int add(int a, int b)
 {
 	return a+b;
 }
 
+/*
+
+while(condition expression){
+	body
+	of
+	loop
+}
+continue here
+
+*/
+
 int main()
 {
-	int num1 = 5;
-	int num2 = 10;
-	int sum = add(num1, num2);
-	int dif = sub(num2, num1);
-	int qnt = div(num1, num2);
-	int pro = mul(num1, num2);
-	printf("sum = %i\n", sum);
-	printf("dif = %i\n", dif);
-	printf("qnt = %i\n", qnt);
-	printf("pro = %i\n", pro);
+	int arr[40][30];
 
+	int y = 0;
+	while(y < 30){
+		int x = 0;
+		while(x < 40){
+			arr[x][y] = y*30+x;
+			printf("arr[%i][%i] = %i\n", x, y,  arr[x][y]);
+			x = x+1;
+		}
+		y = y+1;
+	}
 	return 0;
 }

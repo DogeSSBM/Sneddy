@@ -1,4 +1,4 @@
-#include "Includes.h"
+#include <stdio.h>
 
 int div(int a, int b)
 {
@@ -32,8 +32,8 @@ int main()
 	int pro = mul(num1, num2);
 	printf("sum = %i\n", sum);
 	printf("dif = %i\n", dif);
-	printf("qnt = %i\n", div);
-	printf("pro = %i\n", mul);
+	printf("qnt = %i\n", qnt);
+	printf("pro = %i\n", pro);
 
 	return 0;
 }
